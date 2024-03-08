@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incrementDecrementVJS</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <button class="decrement" onclick="decrement(1)">-</button>
+                <span class="value">0</span>
+                <button class="increment" onclick="increment(1)">+</button>
+   
+            </div>
+        </div>
+    </div>
+    <script>
+    let decrement = document.querySelectorAll(".decrement")
+        
+    decrement.addEventListener
+        let value = 0;
+        function decrement(num){
+            if(value == 0){
+                return
+            }else{
+                value = value - num
+                document.querySelector(".value").innerHTML = value
+
+            }
+            console.log("decrement")
+            console.log(value, "value")
+        }
+        function increment(num){
+            value = value + num
+            document.querySelector(".value").innerHTML = value
+
+        }
+
+    </script>
+</body>
+</html>
